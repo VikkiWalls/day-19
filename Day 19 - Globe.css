@@ -1,0 +1,79 @@
+* {background: #02030c url(https://images.news18.com/ibnlive/uploads/2020/10/1602745953_untitled-design-14.png?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal)}
+
+#earth{
+    position: relative;
+    height:300px;
+    width:300px;
+    margin: 0.05em auto;
+    background:rgb(228, 227, 227) url(http://www.nasa.gov/sites/default/files/thumbnails/image/blackmarble2016-1500px_0.jpg) 0 0 repeat;
+        border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-size: 630px;
+    animation: rotate 4s linear infinite;
+    -webkit-animation: rotate 10s linear infinite;
+    transition: transform 200ms linear;
+    -webkit-transition: transform 200ms linear;
+    -moz-transition: transform 200ms linear;
+    -ms-transition: transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0 80px 6px rgb(0,0,0);
+    color: #000;
+}
+
+@keyframes rotate{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 630 0;
+  }
+}
+
+h1{
+  position: relative;
+  height: 100px;
+  width: 300px;
+  margin: auto;
+  top: 30;
+  left: 0;
+  text-align: center;
+  color: #694806;
+  font-size: 40px;
+  font-family: Garamond;
+}
+
+#earth: before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:;
+  100%content: "";
+  opacity: 0.2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: radial-gradient(circle at 100px 100px, #fff, #000)
+}
+
+#earth: after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:;
+  100%content: "";
+  opacity: 0.2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: -80px 15px 80px 10px rgba(0, 0, 0, 0.9) inset;
+}
